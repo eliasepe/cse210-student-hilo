@@ -45,19 +45,8 @@ class Player:
 shared = Player()
 david = Player()
 
-"""
-print(shared.present_card)
-
-
-print(david.future_card)
 
 shared.draw()
-print(shared.present_card)
-print(shared.future_card)
-"""
-shared.draw()
-
-
 
 #print(shared.total_points)
 print(shared.count_points())
