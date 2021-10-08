@@ -98,5 +98,5 @@ print(femp.fullname())
 
 -METHODS are FUNCTIONS, but in classes
 
-
+-ATTRIBUTES and METHODS are written in the same way:  instance."whatever you want to put"
 """
