@@ -86,3 +86,14 @@ femp = Final_Employee("Shared", "Ordaz")
 #So the METHOD is a function that we apply to our INSTANCE, and we call them at the same way as we call the ATTRIBUTES
 print("Printing the METHOD")
 print(femp.fullname())
+
+"""IN CONCLUSION
+
+-INSTANCES are the new thing that the classes uses to storage data
+
+-ATTRIBUTES are VARIABLES, but in classes
+
+-METHODS are FUNCTIONS, but in classes
+
+-ATTRIBUTES and METHODS are written in the same way:  instance."whatever you want to put"
+"""
