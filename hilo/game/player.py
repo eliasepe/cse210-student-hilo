@@ -1,12 +1,14 @@
 import random
 
-default = 300
+
 class Player:
     
     present_card = 0
     future_card = 0
-    def __init__(self, points=300):
-        self.points = points 
+    
+
+    def __init__(self):
+        pass
 
     def draw(self):
         self.present_card = random.randint(1, 13)
@@ -15,29 +17,32 @@ class Player:
     def guess(self):
         print(f"The card is {self.present_card}")
 
-        ans = str(input("The next card will be higher or lower? H\L")).upper()
+        ans = input("The next card will be higher or lower? l/h: " )
         
         print(f"Next card was {self.future_card}")
         
         if self.present_card <= self.future_card:
-            next_card = "L"
+            next_card = "h"
         elif self.present_card >= self.future_card:
-            next_card = "H"
-
-        if ans.upper() == next_card:
+            next_card = "l"
+        print (ans, next_card)
+        if ans == next_card:
             result = True
-        elif ans.upper() != next_card:
+        elif ans != next_card:
             result = False
         return result
 
-    
-
-
+    def count_points(self):
+        total_points = [300]
+        if self.guess == True:
+            total_points.append(100)
+        elif self.guess == False:
+            total_points.append(-75)
+        return sum(total_points)
+        
 
 shared = Player()
 david = Player()
-
-print(shared.points)
 
 """
 print(shared.present_card)
@@ -50,4 +55,9 @@ print(shared.present_card)
 print(shared.future_card)
 """
 shared.draw()
-shared.guess()
+
+
+print(shared.guess())
+print(shared.count_points())
+
+
