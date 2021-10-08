@@ -89,6 +89,11 @@ femp = Final_Employee("Shared", "Ordaz")
 print("Printing the METHOD")
 print(femp.fullname())
 
+#We can also do this in a reversed way like this
+print("Is the same")
+print(Final_Employee.fullname(femp))
+#And its the same because we are calling the class, and specifiying the INSTANCE that we are using 
+
 
 """IN CONCLUSION
 
