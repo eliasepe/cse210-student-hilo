@@ -46,3 +46,8 @@ class Player:
         elif guess == None:
             self.total_points.append(0)
         return sum(self.total_points)
+
+elias = Player()
+
+elias.draw()
+print(elias.count_points())
