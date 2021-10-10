@@ -34,15 +34,14 @@ class Player:
 
     def count_points(self):
         total_points = [300]
-        if self.guess == True:
+        if Player.guess(self) == True:
             total_points.append(100)
-        elif self.guess == False:
+        elif Player.guess(self) == False:
             total_points.append(-75)
         return sum(total_points)
         
 
 shared = Player()
-david = Player()
 
 """
 print(shared.present_card)
@@ -58,6 +57,6 @@ shared.draw()
 
 
 print(shared.guess())
-print(shared.count_points())
+print(Player.count_points(shared))
 
 
