@@ -35,4 +35,7 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your names and emails here
+* TODO: Edward Rivas: edwardriv45@gmail.com
+*       Elias Perez: elias.perez@alumnos.usm.CL
+*       David Esguerra:
+        Shared Ordaz: sharedordaz@live.com.mx
