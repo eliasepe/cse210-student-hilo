@@ -4,7 +4,7 @@ dealer = dealer()
 
 dealer.star_game()
 """
-import sys
-import dealer
+from dealer import dealer as dlr
 
-juanito = dealer
+gamer = dlr()
+gamer.start_game()
