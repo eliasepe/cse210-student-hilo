@@ -17,7 +17,7 @@ class Player:
     def guess(self):
         print(f"The card is {self.present_card}")
 
-        ans = input("The next card will be higher or lower? l/h: " )
+        ans = input("The next card will be higher or lower? l/h: " ).lower()
         
         print(f"Next card was {self.future_card}")
         
