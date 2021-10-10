@@ -21,15 +21,19 @@ class Player:
         
         print(f"Next card was {self.future_card}")
         
-        if self.present_card <= self.future_card:
+        if self.present_card < self.future_card:
             next_card = "h"
-        elif self.present_card >= self.future_card:
+        elif self.present_card > self.future_card:
             next_card = "l"
+        elif self.present_card == self.future_card:
+            next_card = "equal"
         #print (ans, next_card)
-        if ans == next_card:
+        if ans == "h":
             result = True
-        elif ans != next_card:
+        elif ans == "l":
             result = False
+        else:
+            result = None
         return result
 
 
@@ -39,4 +43,6 @@ class Player:
             self.total_points.append(100)
         elif guess == False:
             self.total_points.append(-75)
+        elif guess == None:
+            self.total_points.append(0)
         return sum(self.total_points)
