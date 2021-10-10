@@ -20,16 +20,9 @@ class dealer:
         "Get the result of the drawn card"
         self.player.draw()
 
-    # def do_updates(self):
-    #     "To update the score after the revelation of the drawn card"
-    #     points = self.player.count_points()
-    #     self.score += points
-    #     return points
-
 
     def do_outputs(self):
-        #self.player.guess()
-        #print(f"Your score is: {self.player.count_points()}")
+
         result = self.player.count_points()
 
         print(f"Your actual score is {result}")
